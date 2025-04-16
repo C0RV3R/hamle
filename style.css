@@ -143,6 +143,12 @@ nav a:hover::after {
   line-height: 1.6;
 }
 
+.hero-logo {
+  width: 150px; 
+  height: auto; 
+  margin-bottom: 20px;
+}
+
 .cta-button {
   padding: 0.9rem 2rem;
   font-weight: bold;
@@ -394,10 +400,6 @@ footer {
     margin-top: 1rem;
   }
 }
-.hero-logo {
-  width: 150px; 
-  height: auto; 
-  margin-bottom: 20px;
-}
+
 
 /* Emre
