@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-/* === RENK PALETİ === */
 :root {
-  /* Tema Renkleri - GÜNDÜZ */
   --bg-color: #fffaf3;
   --text-color: #1e1e1e;
-  --primary-color: #ff6b00;       /* turuncu */
-  --secondary-color: #ffd89b;     /* açık turuncu/bej */
-  --accent-color: #fcd34d;        /* sarımsı vurgular */
+  --primary-color: #ff6b00;      
+  --secondary-color: #ffd89b;     
+  --accent-color: #fcd34d;        
   --card-color: #ffffff;
 
-  /* SVG renkleri */
   --sky: #ffb347;
   --sun: #ffdd57;
   --mountains: #fca311;
@@ -26,11 +23,11 @@
 }
 
 body.dark {
-  /* Tema Renkleri - GECE */
+
   --bg-color: #0a0f2c;
   --text-color: #e0e0e0;
-  --primary-color: #3b82f6;       /* mavi */
-  --secondary-color: #1e3a8a;     /* lacivert */
+  --primary-color: #3b82f6;       
+  --secondary-color: #1e3a8a;     
   --accent-color: #60a5fa;
   --card-color: #1e293b;
 
@@ -60,7 +57,6 @@ body {
   min-height: 100vh;
 }
 
-/* === NAVBAR === */
 header {
   background-color: var(--primary-color);
   color: white;
@@ -98,7 +94,6 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* === TEMA BUTONU === */
 #theme-toggle {
   width: 50px;
   height: 50px;
@@ -118,7 +113,6 @@ nav a:hover::after {
   display: block;
 }
 
-/* === HERO ALANI === */
 .hero {
   display: flex;
   align-items: center;
@@ -167,7 +161,6 @@ nav a:hover::after {
   transform: scale(1.05);
 }
 
-/* === PROJELER SAYFASI === */
 .projects {
   padding: 2rem;
   max-width: 1000px;
@@ -212,7 +205,6 @@ nav a:hover::after {
   box-shadow: 0 0 0 3px var(--accent-color);
 }
 
-/* === PDF İFRAME ALANI === */
 .project-details iframe {
   width: 100%;
   height: 600px;
@@ -220,7 +212,6 @@ nav a:hover::after {
   border-radius: 10px;
 }
 
-/* === RESPONSIVE TASARIM === */
 @media screen and (max-width: 768px) {
   .project-btn {
     font-size: 1rem;
@@ -241,8 +232,6 @@ nav a:hover::after {
   }
 }
 
-
-/* === PROJE DETAYI === */
 #project-details {
   background-color: var(--card-color);
   padding: 1.5rem;
@@ -257,7 +246,6 @@ nav a:hover::after {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* === PROJE BUTONLARI === */
 button.project-btn {
   background-color: var(--primary-color);
   color: white;
@@ -278,7 +266,6 @@ button.project-btn:hover {
   color: var(--text-color);
 }
 
-/* === RESPONSIVE === */
 @media screen and (max-width: 768px) {
   .hero {
     padding: 3rem 1.5rem;
@@ -406,4 +393,9 @@ footer {
   .instagram-link {
     margin-top: 1rem;
   }
+}
+.hero-logo {
+  width: 150px; 
+  height: auto; 
+  margin-bottom: 20px;
 }
