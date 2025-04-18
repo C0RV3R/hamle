@@ -1,0 +1,413 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #e8e8e8;
+  background-color: #d9d9d9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e8e8e8), to(#d9d9d9));
+  background-image: -webkit-linear-gradient(top, #e8e8e8, #d9d9d9);
+  background-image: -moz-linear-gradient(top, #e8e8e8, #d9d9d9);
+  background-image: -o-linear-gradient(top, #e8e8e8, #d9d9d9);
+  background-image: linear-gradient(to bottom, #e8e8e8, #d9d9d9);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+}
+
+#wrapper {
+  display: block;
+  padding: 0;
+  width: 100%;
+}
+
+#header {
+  display: block;
+  padding-top: 27px;
+  background: black;
+}
+#header ul {
+  display: block;
+  padding: 0;
+  margin: 0 0 0;
+  list-style: none;
+}
+#header ul li {
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+}
+#header ul li a {
+  color: #f2f2f2;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-right: 1em;
+  cursor: pointer;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+#header ul li a:focus, #header ul li a:hover {
+  background: white;
+  color: black;
+}
+
+#banner {
+  background: black;
+  position: relative;
+  height: 500px;
+  margin: 0;
+  padding-bottom: 100px;
+  color: #f2f2f2;
+  overflow: hidden;
+  cursor: pointer;
+}
+#banner h1 {
+  margin-top: 100px;
+  font-size: 6rem;
+  font-size: 70px;
+  font-weight: 100;
+  line-height: 1.5em;
+  width: 70%;
+  float: right;
+  text-align: right;
+}
+#banner h1 span {
+  font-weight: 400;
+}
+
+#items {
+  display: block;
+  background: black;
+}
+
+#lipsum {
+  margin: 0;
+  padding: 27px 0;
+  background: black;
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+#lipsum p {
+  width: 47%;
+  padding: 27px 0;
+  float: left;
+  margin-right: 6%;
+  background: black;
+}
+#lipsum p:nth-of-type(2) {
+  margin-right: 0;
+}
+@media screen and (max-width: 600px) {
+  #lipsum p {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+#lipsum h2 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+/* Gerekli font-awesome eklentisi yoksa bu çalışmayabilir */
+.shippy {
+  display: block;
+  position: absolute;
+  background: url(http://games.ericbrewer.ca/images/rocket.png) no-repeat 0 0;
+  z-index: 3;
+}
+.shippy:before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  font-size: 70px;
+  font-family: "fontAwesome";
+  transform-origin: 50% 50%;
+  transform: rotate(45deg) translateY(50px) translateX(50px);
+}
+
+.cloud {
+  display: block;
+  position: absolute;
+  background: white;
+  border-radius: 40px;
+  z-index: 2;
+}
+
+.star {
+  display: block;
+  position: absolute;
+  background: rgb(8, 226, 255);
+  border-radius: 2px; /* ← düzeltildi */
+  z-index: 1;
+}
+
+#about {
+  background: black;
+  padding: 6rem 2rem;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-wrapper.vertical {
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  padding: 4rem 2rem;
+  background: rgb(190, 189, 189);
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  animation: fadeSlideUp 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-logo {
+  margin-bottom: 2rem;
+}
+
+.about-logo img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.about-logo img:hover {
+  transform: scale(1.05);
+}
+
+.about-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+.about-text p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #000000;
+  margin-bottom: 1.4rem;
+}
+
+@media (max-width: 600px) {
+  .about-wrapper.vertical {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1.3rem;
+  }
+}
+
+#team {
+  background: #111;
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+#team > h2 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.team-section {
+  margin-bottom: 3rem;
+}
+
+.team-section h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.team-member {
+  background: #222;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.team-member h4 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.team-member a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.team-member a img:hover {
+  transform: scale(1.2);
+}
+/* Temel stiller */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #111;
+  color: #f2f2f2;
+}
+
+
+/* Projeler bölümü */
+#projects {
+  background: linear-gradient(to bottom, #1c1c1c, #222);
+  padding: 10rem 2rem;
+  text-align: center;
+}
+
+.projects-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#projects h2 {
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: #f9f9f9;
+}
+
+.project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.project-buttons button {
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  background-color: #333;
+  color: #f2f2f2;
+  border: 1px solid #555;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.project-buttons button:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+.pdf-viewer {
+  background: #000;
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 1rem;
+  min-height: 400px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.pdf-viewer iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .pdf-viewer iframe {
+    height: 400px;
+  }
+}
+
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 16px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  flex: 1;
+}
+
+.footer-contact {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-contact:hover {
+  color: #f0c040;
+}
+
+
+

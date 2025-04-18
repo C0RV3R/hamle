@@ -1,83 +1,51 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projeler | Hamle</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/img/hamle.ico" type="image/x-icon">
+  <title>Hamle | Projeler</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
-  <header>
-    <nav>
-      <div>
-        <a href="index.html">Anasayfa</a>
-        <a href="members.html">Üyeler</a>
-        <a href="projects.html">Projeler</a>
+  <div id='wrapper'>
+    <header id='header'>
+      <div class='wrap'>
+        <ul class='clearfix'>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="projects.html">Projelerimiz</a></li>
+            <li><a href="members.html">Üyeler</a></li>
+        </ul>
       </div>
-      <div id="theme-toggle">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 505">
-          <defs>
-            <clipPath id="clip-path">
-              <circle id="circle" cx="250" cy="250" r="200"/>
-            </clipPath>
-            <radialGradient id="sunGlare" cx="146.18" cy="185.52" r="90"  gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="var(--sun)"/>
-              <stop offset="1" stop-color="var(--sky)" />
-            </radialGradient>
-          </defs>
-          <g id="world" clip-path="url(#clip-path)">
-            <g id="sky">
-              <circle id="sky_disk" fill="var(--sky)" cx="250" cy="450" r="524.95"/>
-              <circle id="glare" fill="url(#sunGlare)" cx="146.18" cy="185.52" r="90"/>
-              <circle id="sun_core" fill="var(--sun)" cx="146.18" cy="185.52" r="25"/>  
-            </g>
-            <path id="mountains" fill="var(--mountains)" d="M500 500H0V366c27.18-20.91 87.73-70 104.37-88.25l4.89 10.49 12.39-12.39 10.14 12.39 23.34-24.79L183 293.3l61.38-50.36 4.52 19.39 21.4 6.76 26.34-14.36c13.93 17.18 30 35.2 38.43 38.58 16.9 6.76 54.07 13.52 54.07 13.52L500 393z"/>
-            <path id="snow2" fill="var(--snow)" d="M296.67 254.72l-26.34 14.36-21.4-6.76-4.52-19.39 26.48-21.73s11.84 16.35 25.78 33.52z"/>
-            <path id="snow1" fill="var(--snow)" d="M155.13 263.44l-23.34 24.79-10.14-12.39-12.39 12.39-4.89-10.49a459.84 459.84 0 0 0 30.23-36.26z"/>
-            <path id="trees_z4" fill="var(--trees-z4)" d="M170 360l14-54 4.81 20.33 4.19-29.08 3.32 24.09 4.15-18 3 32.4 5.26-26.59 1.66 29.63 5-41.54 2.77 41.54 4.15-28.25s1.66 32.68 2.22 31.3 5.54-31.85 5.82-31 2.77 30.74 3.32 28.8 5.54-31.85 5.54-31.85l8.86 34.06 3.93-37.39 6 28.55 6-33 9 60z"/>
-            <path fill="var(--trees-z3)" d="M402.15 302.57l-2.22 34.06-8.31-28.8-3.88 37.39-8.86-34.06s-5 29.91-5.54 31.85-3-28-3.32-28.8-5.26 29.63-5.82 31-2.2-31.28-2.2-31.28l-4.15 28.25-2.77-41.54-5 41.54-1.66-29.63-5.26 26.59-3-32.4-4.15 18-3.32-24.09-4.15 29.08-2.54-21.62L313 350h-71l-5.43-39.54-2.22 34.06-8.35-28.8-3.88 37.39-8.81-34.11s-5 29.91-5.54 31.85-3-28-3.32-28.8-5.26 29.63-5.82 31-2.22-31.29-2.22-31.29l-4.15 28.25-2.77-41.54-5 41.54-1.66-29.63-5.25 26.62-3-32.4-4.15 18-3.32-24.09-4.21 29.09-2.49-21.6-6.09 24.09v20.24L410 360v-14.78z"/>
-            <ellipse id="hill_right" fill="var(--hills)" cx="308.07" cy="423.4" rx="214.58" ry="95.74"/>
-            <ellipse id="hill_left" fill="var(--hills)" cx="150.38" cy="408.76" rx="105.32" ry="67.58"/>
-            <path id="trees_z2" fill="var(--trees-z2)"  d="M77.72 400l24.78-100.5 10.14 87.86 16.9-118.27 13.52 98L160 293.87l12.39 131.79 21.4-108.13L200.5 438l20.28-169L232 438l16.9-114.89s6.76 132.92 9 127.28 22.58-129.49 23.7-126.11 11.26 125 13.52 117.15 22.53-129.54 22.53-129.54l36 138.55 15.77-152.06 33.79 117.15 9-138.55L433 400h67v100H0V400z"/>
-            <path id="trees_z1" fill="var(--trees-z1)" d="M60.83 421l24.78-96.72 10.14 87.86 16.9-118.27 13.52 98 16.9-73.22 12.39 131.79 21.4-108.13 6.76 120.53 20.28-169 11.26 169L232 347.93s6.76 132.92 9 127.28 22.53-129.54 23.65-126.16 11.26 125 13.52 117.15 22.53-129.54 22.53-129.54l36 138.55 15.77-152.06 33.89 117.15 9-138.55L417.17 421H500v79H0v-79z"/>
-            <path id="shadow" class="shadow" d="M-40.55-27.16V536h563.2V-27.16zm261.89 478.72c-101.09 0-183-90-183-201.06s81.95-201.06 183-201.06 183 90 183 201.06-81.91 201.06-183 201.06z"/>
-          </g>
-          <g id="rocket">
-            <path d="M305.58 126.36L185.46 281.85l69.05-66.75-12.14 16.49 90.76-77.68-27.55-27.55z" fill="var(--snow)"/>
-            <path id="rocket_shadow" fill="var(--rocket-2)" d="M321.56 107.24c-1 1-2.08 2.1-3.06 3.17-6.2-2.43-12.41-3.36-19.58.23-9.89 4.95-18.22 16.37-19.48 26.3a1.52 1.52 0 0 0 2.81 1c2.35-2.94 7.24-7.32 10.79-9.1a24.37 24.37 0 0 1 12.41-2.61l4.56 4.56 9.23 9.23 36.33-36.32a7.08 7.08 0 0 1 10-10L385 74.16c-15.94-1.75-41.21 10.84-63.44 33.08z"/>
-            <path id="rocket-2" data-name="rocket" fill="var(--rocket-1)" d="M352.4 138.1c-1.08 1.07-2.16 2.12-3.26 3.15a2 2 0 0 1 .21.38c2.47 6.2 3.41 12.41-.16 19.59-4.92 9.89-16.32 18.26-26.25 19.56-1.6.21-2.26-1.76-1-2.81 2.92-2.36 7.29-7.25 9.06-10.81a24.11 24.11 0 0 0 2.53-13l-.07.06L319.23 140l36.33-36.32a7.08 7.08 0 1 0 10-10L385 74.16h.4c2.04 16-10.58 41.51-33 63.94z"/>
-          </g>
-        </svg>
+    </header>
+
+    <section id="projects">
+      <div class="projects-wrapper">
+        <h2>Projelerimiz</h2>
+
+        <div class="project-buttons">
+          <button onclick="loadPDF('assets/pdf/telemetrium.pdf')">Telemetri</button>
+          <button onclick="loadPDF('assets/pdf/haberlesme.pdf')">Haberleşme Protokolleri</button>
+        </div>
+
+        <div class="pdf-viewer" id="pdfViewer">
+          <p>Bir proje seçtiğinizde, Burada görüntülenecektir.</p>
+        </div>
       </div>
-    </nav>
-  </header>
+    </section>
+  </div>
 
-  <main class="projects">
-    <h1>Projelerimiz</h1>
-
-    <div class="project-buttons">
-      <button class="project-btn" data-project="haberlesme">Haberleşme Protokolleri</button>
-      <button class="project-btn" data-project="telemetrium">Telemetri -> TeleMetrium</button>
-    </div>
-
-    <div id="project-details" class="project-details" style="margin-top: 2rem;"></div>
-  </main>
-
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Hamle Takımı Bütün hakları saklıdır.</p>
-      <a href="https://www.instagram.com/hamlerokettakimi/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-    </svg>
-      </svg>
+  <footer class="footer">
+    <div class="footer-container">
+      <p>©2025 Hamle Roket Takımı, Bütün hakları saklıdır.</p>
+      <a href="iletisim.html" class="footer-contact">Bize Ulaşın</a>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="assets/script/script.js"></script>
 </body>
-
 </html>
