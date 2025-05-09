@@ -294,11 +294,9 @@ h2::after {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
-  cursor: pointer;
+  cursor: default; /* Kartın kendisi tıklanabilir değil */
   position: relative;
   padding: 20px;
-  text-decoration: none;
-  color: inherit;
 }
 
 .project-card:hover, .team-card:hover {
@@ -316,6 +314,7 @@ h2::after {
   background: linear-gradient(135deg, rgba(153, 204, 255, 0.2), transparent);
   opacity: 0;
   transition: opacity 0.3s;
+  pointer-events: none; /* Pseudo-element tıklamayı engellemez */
 }
 
 .project-card:hover::before, .team-card:hover::before {
@@ -324,6 +323,11 @@ h2::after {
 
 .project-card:active, .team-card:active {
   transform: scale(0.98);
+}
+
+.project-card {
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-card img {
@@ -349,6 +353,14 @@ h2::after {
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+  pointer-events: auto; /* Sosyal bağlantılar tıklanabilir */
+  z-index: 10; /* Üstte kalır */
+}
+
+.linkedin-icon {
+  display: inline-block;
+  pointer-events: auto; /* İkon tıklanabilir */
+  z-index: 10; /* Üstte kalır */
 }
 
 .linkedin-icon img {
@@ -410,8 +422,6 @@ h2::after {
   color: #dc3545;
   opacity: 1;
 }
-
-
 
 footer {
   background: linear-gradient(135deg, var(--secondary-bg) 0%, #b3d1ff 100%);
