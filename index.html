@@ -1,59 +1,92 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hamle</title>
-  <link rel="icon" href="assets/img/hamle.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ar-Ge İnovasyon ile geleceği şekillendirin. Teknoloji ve sürdürülebilirlik odaklı çözümler sunuyoruz.">
+    <meta name="keywords" content="Ar-Ge, inovasyon, teknoloji, yapay zeka, sürdürülebilirlik, akıllı şehir">
+    <meta name="author" content="Ar-Ge İnovasyon">
+    <meta property="og:title" content="Ar-Ge İnovasyon">
+    <meta property="og:description" content="Geleceği teknolojiyle inşa ediyoruz. Ar-Ge odaklı çözümlerimizle tanışın.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630">
+    <meta property="og:url" content="https://arge-inovasyon.com">
+    <title>Ar-Ge İnovasyon</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Ar-Ge İnovasyon",
+        "url": "https://arge-inovasyon.com",
+        "logo": "https://via.placeholder.com/150",
+        "description": "Teknoloji ve inovasyon odaklı Ar-Ge çözümleri sunan lider bir kuruluş."
+    }
+    </script>
 </head>
 <body>
-  <div id='wrapper'>
-    <header id='header'>
-      <div class='wrap'>
-        <ul class='clearfix'>
-          <li><a href="index.html">Anasayfa</a></li>
-          <li><a href="projects.html">Projelerimiz</a></li>
-          <li><a href="member.html">Üyeler</a></li>
-        </ul>
-      </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Ar-Ge İnovasyon</div>
+            <canvas id="nav-particles"></canvas>
+            <ul class="nav-links">
+                <li><a href="index.html" aria-label="Ana Sayfa">Ana Sayfa</a></li>
+                <li><a href="assets/html/projects.html" aria-label="Projeler">Projeler</a></li>
+                <li><a href="assets/html/team.html" aria-label="Ekibimiz">Ekibimiz</a></li>
+                <li><a href="assets/html/contact.html" aria-label="İletişim">İletişim</a></li>
+            </ul>
+            <div class="menu-toggle" aria-label="Menüyü aç/kapat">☰</div>
+        </nav>
     </header>
-    
-    <div class='clearfix' id='banner'>
-      <div class='wrap clearfix'>
-        <h1><span>Hamle Roket Takımı</h1>
-      </div>
-    </div>
-    
-    
-    <section id="about">
-      <div class="about-wrapper vertical">
-        <div class="about-logo">
-          <img src="assets/img/hamle.jpeg" alt="Hamle Takımı Logosu">
+
+    <section id="home" class="hero">
+        <canvas id="stars"></canvas>
+        <div class="hero-content">
+            <h1>İnovasyonun Ötesine Yolculuk</h1>
+            <p>Ar-Ge ile geleceği yeniden tanımlıyor, teknolojiyi insanlık için bir fırsata dönüştürüyoruz.</p>
         </div>
-        <div class="about-text">
-          <h2>Biz Kimiz?</h2>
-          <p>Hamle Takımı, İstanbul Atlas Üniversitesi mühendislik öğrencileri tarafından kurulan bir Teknofest takımıdır.</p>
-          <p>Takımımız, yerli üretimi desteklemek ve Türkiye'nin milli teknoloji hamlesine katkı sağlamak amacıyla kurulmuştur. Kendi imkanlarımızla geliştirdiğimiz özgün projelerle hem teknolojik yetkinliğimizi artırmayı hem de genç mühendisler olarak ülkemizin geleceğine katkı sunmayı hedefliyoruz.</p>
-        </div>
-      </div>
     </section>
 
-    <footer class="footer">
-      <div class="footer-container">
-        <p>©2025 Hamle Roket Takımı, Bütün hakları saklıdır.</p>
-        <a href="iletisim.html" class="footer-contact">Bize Ulaşın</a>
-      </div>
+    <section id="mission" class="mission">
+        <h2>Misyon & Vizyon</h2>
+        <div class="mission-content">
+            <div class="mission-card">
+                <h3>Misyonumuz</h3>
+                <p>Daha bulamadık.</p>
+            </div>
+            <div class="mission-card">
+                <h3>Vizyonumuz</h3>
+                <p>Daha bulamadık.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ar-Ge İnovasyon</h3>
+                <p>Geleceği teknolojiyle inşa ediyoruz.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Bağlantılar</h3>
+                <ul>
+                    <li><a href="index.html" aria-label="Ana Sayfa">Ana Sayfa</a></li>
+                    <li><a href="assets/html/projects.html" aria-label="Projeler">Projeler</a></li>
+                    <li><a href="assets/html/team.html" aria-label="Ekibimiz">Ekibimiz</a></li>
+                    <li><a href="assets/html/contact.html" aria-label="İletişim">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p>E-posta: bilmemne@takim.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Ar-Ge İnovasyon. Tüm hakları saklıdır.</p>
+        </div>
     </footer>
-    
-    
-    
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
-  <script src="assets/script/script.js"></script>
+
+    <script src="assets/script/script.js"></script>
 </body>
 </html>
