@@ -238,21 +238,7 @@ document.head.appendChild(style);
     });
 });
 
-// Çerez bildirimi
-const cookieConsent = document.getElementById('cookie-consent');
-const cookieAccept = document.getElementById('cookie-accept');
-if (cookieConsent && cookieAccept) {
-    if (!localStorage.getItem('cookieConsent')) {
-        setTimeout(() => {
-            cookieConsent.classList.add('visible');
-        }, 1000);
-    }
 
-    cookieAccept.addEventListener('click', () => {
-        localStorage.setItem('cookieConsent', 'accepted');
-        cookieConsent.classList.remove('visible');
-    });
-}
 
 // Klavye navigasyonu için kart tıklama
 [projectCards, teamCards].forEach(cardGroup => {
