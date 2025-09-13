@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mesaj Önizleme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            padding: 2rem;
+            background-color: #f5f5f5;
+        }
+        .preview-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .preview-container h2 {
+            margin-bottom: 1rem;
+        }
+        .preview-container p {
+            margin-bottom: 0.5rem;
+        }
+        .label {
+            font-weight: 600;
+        }
+        #preview-message {
+            white-space: pre-wrap;
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <h2>Mesaj Önizlemesi</h2>
+        <p><span class="label">Ad:</span> <span id="preview-name">Yükleniyor...</span></p>
+        <p><span class="label">E-posta:</span> <span id="preview-email">Yükleniyor...</span></p>
+        <p><span class="label">Mesaj:</span></p>
+        <p id="preview-message">Yükleniyor...</p>
+    </div>
+
+</body>
+</html>

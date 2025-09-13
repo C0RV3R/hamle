@@ -29,10 +29,16 @@
 
     <section class="contact">
         <h2>Bize Ulaşın</h2>
-        <form id="contact-form" aria-label="İletişim formu">
-            <input type="text" placeholder="Adınız" required aria-label="Adınız">
-            <input type="email" placeholder="E-posta" required aria-label="E-posta adresiniz">
-            <textarea placeholder="Mesajınız" required aria-label="Mesajınız"></textarea>
+
+        <form action="https://formsubmit.co/emre.selvitopu@icloud.com" method="POST" id="contact-form" aria-label="İletişim formu">
+            <input type="text" name="name" placeholder="Adınız" required aria-label="Adınız">
+            <input type="email" name="email" placeholder="E-posta" required aria-label="E-posta adresiniz">
+            <textarea name="message" placeholder="Mesajınız" required aria-label="Mesajınız"></textarea>
+
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://example.com/dummy-success.html">
+
             <button type="submit" class="cta-button" aria-label="Mesaj gönder">Mesaj Gönder</button>
             <div class="form-message" id="form-message"></div>
         </form>
@@ -47,22 +53,20 @@
             <div class="footer-section">
                 <h3>Hızlı Bağlantılar</h3>
                 <ul>
-                    <li><a href="../../index.html" aria-label="Ana Sayfa">Ana Sayfa</a></li>
-                    <li><a href="projects.html" aria-label="Projeler">Projeler</a></li>
-                    <li><a href="team.html" aria-label="Ekibimiz">Ekibimiz</a></li>
-                    <li><a href="contact.html" aria-label="İletişim">İletişim</a></li>
+                    <li><a href="../../index.html">Ana Sayfa</a></li>
+                    <li><a href="projects.html">Projeler</a></li>
+                    <li><a href="team.html">Ekibimiz</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h3>İletişim</h3>
-                <p>E-posta: safirteknoloji@takim.com (not active yet)</p>
+                <p>E-posta: safirteknolojitakimi@gmail.com</p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>© 2025 Safir Teknoloji Takımı. Tüm hakları saklıdır.</p>
         </div>
     </footer>
-
-    <script src="../script/script.js"></script>
 </body>
 </html>
